@@ -5,7 +5,7 @@ class celular:
     __Peso=194
     __Color="negro"
     __Altura=150.9
-    _Endendido=False
+    _Encendido=False
 
     def __init__(self,modelo):
         self.modelo=modelo
@@ -19,4 +19,16 @@ class celular:
 
         else:
             return "El celular no encendió"
-            
+
+
+    def encender_Linterna(self,encender):
+        self.__Linterna=encender
+
+
+        if self.__Linterna:
+            return "Linterna encendida"
+
+        else:
+            return "Linterna apagada"
+    
+    
